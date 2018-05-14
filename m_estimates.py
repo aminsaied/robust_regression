@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
     results = pd.DataFrame(columns=['filename','a','b'])
 
-    for filename, df in data.items():
+    for filename, df in sorted(data.items()):
 
         print(filename)
         print("Compute M-estimate using Huber-norm reweighting.")
@@ -53,5 +53,4 @@ if __name__ == '__main__':
         results = results.append(row, ignore_index=True)
 
     # save as .csv
-    results = results.sort_values(by=['filename'])
     results.to_csv(OUTPUT_FILENAME)
