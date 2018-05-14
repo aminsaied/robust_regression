@@ -10,7 +10,7 @@ import statsmodels.api as sm
 
 from utils import load_data, from_dataframe, huber
 
-OUTPUT_FILENAME = 'results/results_M.csv'
+OUTPUT_FILENAME = 'results_M.csv'
 
 def m_estimate(df, norm, verbose=False):
     """Compute M-estimate of linear model with specified norm.

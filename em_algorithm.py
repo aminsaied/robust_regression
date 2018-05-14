@@ -16,7 +16,7 @@ import statsmodels.api as sm
 
 from utils import load_data, from_dataframe
 
-OUTPUT_FILENAME = 'results/results.csv'
+OUTPUT_FILENAME = 'results.csv'
 
 class ECME(object):
     """Implements modified version of ECME algorithn of Liu-Rubin.
